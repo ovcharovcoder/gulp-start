@@ -1,6 +1,6 @@
 # gulp_start_datoshcode
 
-<p> About "gulp_start_datoshcode" </p>
+<h3> About "gulp_start_datoshcode" </h3>
 
 <p>This is a custom build of the Gulp task manager that speeds up the website development process.</p>
 <ul>
@@ -10,7 +10,7 @@
 <li>Licence: GNU/GPL.</li>
 </ul>
 
-<h2> Assembly capabilities </h2>
+<h3> Assembly capabilities </h3>
 
 <ol>
 <li>Compresses and converts style files from format .scss to format .min.css;</li>
@@ -22,7 +22,7 @@
 </ol>
 
 
-<h2> Instructions for using the tool </h2> 
+<h3> Instructions for using the tool </h3> 
 <ol>
 <li>To start working with the website assembly tool, you need to copy all the files into an empty folder of the new project : 
 <code>npm i</code> </li>
