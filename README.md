@@ -35,7 +35,7 @@
 
 <li>To stop the build process, press the key combination: 'Ctrl+C'. </li>
 
-<img src="img.png" alt="image">
-
 <li>Individual components of HTML pages must be saved in the folder "components", and the main part of the code for HTML must be written in the index.html file in the folder "pages". Other HTML project files must also be saved in the "pages" folder. The finished version of the HTML layout file will be saved in the root "app" folder. </li>
 </ol>
+
+<img src="img.png" alt="image">
