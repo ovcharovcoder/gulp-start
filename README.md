@@ -28,10 +28,10 @@
 <code>npm i</code> </li>
 
 <li>After this, to start developing the website, you need to enter the command in the terminal:
-<code>gulp</code>code> </li>
+<code>gulp</code> </li>
 
 <li>After completing development and to perform operations to compress and convert project files, you must enter the final command:
-<code>gulp build</code>code> </li>
+<code>gulp build</code> </li>
 
 <li>To stop the build process, press the key combination: 'Ctrl+C'. </li>
 
