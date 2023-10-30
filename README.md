@@ -5,7 +5,7 @@
 <p>This is a custom build of the Gulp task manager that speeds up the website development process.</p>
 <ul>
 <li>Author: Andrii Ovcharov (Datosh Code);</li>
-<li>Build date: 16.10.2023</li>
+<li>Build date: 30.10.2023</li>
 <li>E-mail: datoshcode@gmail.com</li>
 <li>Licence: GNU/GPL.</li>
 </ul>
@@ -31,7 +31,7 @@
 <code>gulp</code> </li>
 
 <li>After completing development and to perform operations to compress and convert project files, you must enter the final command:
-<code>gulp build</code> </li>
+<code>gulp building</code> </li>
 
 <li>To stop the build process, press the key combination: 'Ctrl+C'. </li>
 
