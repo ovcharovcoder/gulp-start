@@ -4,7 +4,7 @@
 
 <p>This is a custom build of the Gulp task manager that speeds up the website development process.</p>
 <ul>
-<li>Author: Andrii Ovcharov (Datosh Code);</li>
+<li>Author: Andriy Ovcharov (Datosh Code);</li>
 <li>Build date: 01.11.2023</li>
 <li>Recommended version Node.Js: 20.9.0 (https://nodejs.org/en/blog/release/v20.9.0)</li>
 <li>E-mail: datoshcode@gmail.com</li>
