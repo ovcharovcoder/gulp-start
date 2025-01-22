@@ -4,9 +4,9 @@
 
 <p>This is a custom build of the Gulp task manager that speeds up the website development process.</p>
 <ul>
-<li>Author: Andriy Ovcharov (Datosh Code);</li>
-<li>Build date: 14.11.2023</li>
-<li>Recommended version Node.Js: 20.9.0 (https://nodejs.org/en/blog/release/v20.9.0)</li>
+<li>Author: Andriy Ovcharov (OvcharovCoder);</li>
+<li>Build date: 22.01.2025</li>
+<li>Recommended version Node.Js: 22.13.1 (LTS) (https://nodejs.org/dist/v22.13.1/node-v22.13.1-x64.msi)</li>
 <li>E-mail: datoshcode@gmail.com</li>
 <li>Licence: GNU/GPL.</li>
 </ul>
@@ -18,7 +18,7 @@
 <li>Compresses JS script files;</li>
 <li>The site is built in real time on the fly;</li>
 <li>Adding vendor prefixes to the styles file;</li>
-<li>Converts images from .jpg, .png to .webp, .avif;</li>
+<li>Converts images from .jpg, .png to .webp;</li>
 <li>The final build is performed with the previous cleanup of obsolete files.</li>
 </ol>
 
