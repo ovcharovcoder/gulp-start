@@ -5,7 +5,7 @@
 <p>This is a custom build of the Gulp task manager that speeds up the website development process.</p>
 <ul>
 <li>Author: Andriy Ovcharov (OvcharovCoder);</li>
-<li>Build date: 22.01.2025</li>
+<li>Build date: 26.01.2025</li>
 <li>Recommended version Node.Js: 22.13.1 (LTS) (https://nodejs.org/dist/v22.13.1/node-v22.13.1-x64.msi)</li>
 <li>E-mail: datoshcode@gmail.com</li>
 <li>Licence: GNU/GPL.</li>
