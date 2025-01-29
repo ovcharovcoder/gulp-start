@@ -1,4 +1,4 @@
-<h1>Gulp start</h1>
+<h1>Gulp start: SCSS + TailwindCSS</h1>
 
 <h3> About "gulp_start_ovcharovcoder" </h3>
 
