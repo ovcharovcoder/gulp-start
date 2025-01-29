@@ -5,7 +5,6 @@
 <p>This is a custom build of the Gulp task manager that speeds up the website development process.</p>
 <ul>
 <li>Author: Andriy Ovcharov (OvcharovCoder);</li>
-<li>Build date: 26.01.2025</li>
 <li>Recommended version Node.Js: 22.13.1 (LTS) (https://nodejs.org/dist/v22.13.1/node-v22.13.1-x64.msi)</li>
 <li>E-mail: datoshcode@gmail.com</li>
 <li>Licence: GNU/GPL.</li>
@@ -37,8 +36,6 @@
 <li>To stop the build process, press the key combination: 'Ctrl+C'. </li>
 
 <li>Individual components of HTML pages must be saved in the folder "components", and the main part of the code for HTML must be written in the index.html file in the folder "pages". Other HTML project files must also be saved in the "pages" folder. The finished version of the HTML layout file will be saved in the root "app" folder. </li>
-
-<li>Download the archive. The archive contains detailed instructions in Ukrainian.</li>
 </ol>
 
 <img src="img.png" alt="image">
