@@ -1,12 +1,12 @@
 <h1>Gulp start: (SCSS + TailwindCSS) and Webpack start: (SCSS)</h1>
 
-<h3> About "gulp_start_ovcharovcoder" </h3>
+<h3>About</h3>
 
 <p>This is a custom build of the Gulp task manager that speeds up the website development process.</p>
 <ul>
-<li>Author: Andriy Ovcharov (OvcharovCoder);</li>
+<li>Author: Andriy Ovcharov;</li>
 <li>Recommended version Node.Js: 22.13.1 (LTS) (https://nodejs.org/dist/v22.13.1/node-v22.13.1-x64.msi)</li>
-<li>E-mail: datoshcode@gmail.com</li>
+<li>E-mail: ovcharovcoder@gmail.com</li>
 </ul>
 
 <h3> Assembly capabilities </h3>
