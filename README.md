@@ -1,4 +1,4 @@
-<h1>Gulp start: SCSS + TailwindCSS</h1>
+<h1>Gulp start: (SCSS + TailwindCSS) and Webpack start: (SCSS)</h1>
 
 <h3> About "gulp_start_ovcharovcoder" </h3>
 
@@ -7,7 +7,6 @@
 <li>Author: Andriy Ovcharov (OvcharovCoder);</li>
 <li>Recommended version Node.Js: 22.13.1 (LTS) (https://nodejs.org/dist/v22.13.1/node-v22.13.1-x64.msi)</li>
 <li>E-mail: datoshcode@gmail.com</li>
-<li>Licence: GNU/GPL.</li>
 </ul>
 
 <h3> Assembly capabilities </h3>
