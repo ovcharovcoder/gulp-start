@@ -20,7 +20,7 @@ const plugins = {
   if: require('gulp-if'),
 };
 
-// Шляхи до файлів
+// File paths
 const paths = {
   imagesSrc: 'app/images/src/**/*.{jpg,jpeg,png,svg}',
   scriptsSrc: 'app/js/main.js',
@@ -29,14 +29,14 @@ const paths = {
   fontsSrc: 'app/fonts/src/*.{ttf,otf}',
 };
 
-// Обробка HTML з компонентами
+// Processing HTML with components
 function pages() {
   console.log('Обробка HTML...');
   return src(paths.htmlSrc)
     .pipe(
       plugins.plumber({
         errorHandler: plugins.notify.onError(
-          'Помилка HTML: <%= error.message %>'
+          'Error HTML: <%= error.message %>'
         ),
       })
     )
@@ -45,42 +45,38 @@ function pages() {
     .pipe(plugins.browserSync.reload({ stream: true }));
 }
 
-// Оптимізація шрифтів
+// Font optimization
 function fonts() {
-  return (
-    src(paths.fontsSrc)
-      .pipe(
-        plugins.plumber({
-          errorHandler: plugins.notify.onError(
-            'Помилка шрифтів: <%= error.message %>'
-          ),
-        })
-      )
-      .pipe(plugins.fonter({ formats: ['woff', 'ttf'] }))
-      // Копіюємо лише .woff, виключаючи .ttf
-      .pipe(plugins.if(file => /\.woff$/.test(file.extname), dest('app/fonts')))
-      // Завантажуємо .ttf для конвертації в .woff2
-      .pipe(src('app/fonts/src/*.ttf'))
-      .pipe(plugins.ttf2woff2())
-      .pipe(dest('app/fonts'))
-  );
+  return src(paths.fontsSrc)
+    .pipe(
+      plugins.plumber({
+        errorHandler: plugins.notify.onError(
+          'Error Fonts: <%= error.message %>'
+        ),
+      })
+    )
+    .pipe(plugins.fonter({ formats: ['woff', 'ttf'] }))
+    .pipe(plugins.if(file => /\.woff$/.test(file.extname), dest('app/fonts')))
+    .pipe(src('app/fonts/src/*.ttf'))
+    .pipe(plugins.ttf2woff2())
+    .pipe(dest('app/fonts'));
 }
 
-// Оптимізація зображень
+// Image optimization
 function images() {
   return (
     src(paths.imagesSrc)
       .pipe(
         plugins.plumber({
           errorHandler: plugins.notify.onError(
-            'Помилка зображень: <%= error.message %>'
+            'Error image: <%= error.message %>'
           ),
         })
       )
       .pipe(plugins.newer('app/images'))
-      // Копіювання SVG без змін
+      // Copy SVG without changes
       .pipe(plugins.if(file => /\.svg$/.test(file.extname), dest('app/images')))
-      // Конвертація JPG/PNG у AVIF
+      // Convert JPG/PNG to AVIF
       .pipe(
         plugins.if(
           file => /\.(jpg|jpeg|png)$/.test(file.extname),
@@ -88,7 +84,7 @@ function images() {
         )
       )
       .pipe(dest('app/images'))
-      // Повторне завантаження для WebP
+      // Reload for WebP
       .pipe(src(paths.imagesSrc))
       .pipe(plugins.newer('app/images'))
       .pipe(
@@ -101,13 +97,13 @@ function images() {
   );
 }
 
-// Обробка скриптів
+// Script processing
 function scripts() {
   return src(paths.scriptsSrc)
     .pipe(
       plugins.plumber({
         errorHandler: plugins.notify.onError(
-          'Помилка скриптів: <%= error.message %>'
+          'Error scripts: <%= error.message %>'
         ),
       })
     )
@@ -119,13 +115,13 @@ function scripts() {
     .pipe(plugins.browserSync.reload({ stream: true }));
 }
 
-// Обробка стилів
+// Style processing
 function styles() {
   return src(paths.stylesSrc)
     .pipe(
       plugins.plumber({
         errorHandler: plugins.notify.onError(
-          'Помилка стилів: <%= error.message %>'
+          'Error styles: <%= error.message %>'
         ),
       })
     )
@@ -138,7 +134,7 @@ function styles() {
     .pipe(plugins.browserSync.stream());
 }
 
-// Синхронізація браузера
+// Browser synchronization
 function sync() {
   plugins.browserSync.init({
     server: { baseDir: 'app/' },
@@ -149,21 +145,21 @@ function sync() {
   });
 }
 
-// Спостереження за файлами
+// Watching
 function watching() {
-  console.log('👀 Спостереження за файлами...');
+  console.log('👀 File watching...');
   sync();
 
-  // Спостереження за SCSS
+  // SCSS watching
   watch('app/scss/**/*.scss', styles);
 
-  // Спостереження за HTML
+  // HTML watching
   watch(['app/components/**/*.html', 'app/pages/*.html'], pages);
 
-  // Спостереження за JS
+  // JS watching
   watch('app/js/main.js', scripts);
 
-  // Спостереження за зображеннями
+  // Images watching
   watch(
     paths.imagesSrc,
     series(images, function (cb) {
@@ -172,22 +168,22 @@ function watching() {
     })
   );
 
-  // Спостереження за шрифтами
+  // Fonts watching
   watch(paths.fontsSrc, fonts);
 }
 
-// Очищення папки dist
+// Clean up the dist folder
 function cleanDist() {
   return src('dist', { allowEmpty: true }).pipe(plugins.clean());
 }
 
-// Збірка для продакшену
+// Build for production
 function building() {
   return src(
     [
       'app/css/style.min.css',
       'app/images/**/*.{svg,webp,avif}',
-      'app/fonts/*.{woff,woff2}', // Включено лише woff і woff2
+      'app/fonts/*.{woff,woff2}',
       'app/js/main.min.js',
       'app/*.html',
     ],
