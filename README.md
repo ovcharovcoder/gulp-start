@@ -103,8 +103,6 @@ npm install --save-dev gulp
 @@include('footer.html') - під'єднуємо footer.html
 
 
-Приємної роботи!
-
-
+**Приємної роботи!**
 
 <img src="img1.png" alt="image">
