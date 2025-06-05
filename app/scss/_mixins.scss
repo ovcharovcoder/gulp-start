@@ -1,0 +1,86 @@
+@use 'vars' as *;
+@use 'fonts' as *;
+
+// Mixins for Fonts
+/* Example 1
+@mixin sf($weight: 400) {
+	font-family: 'SFProDisplay-Regular', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: $weight;
+
+	@if $weight == 500 {
+		font-family: 'SFProDisplay-Medium', sans-serif;
+	}
+	@else if $weight == 600 {
+		font-family: 'SFProDisplay-Semibold', sans-serif;
+	}
+	@else if $weight == 700 {
+		font-family: 'SFProDisplay-Bold', sans-serif;
+	}
+}
+
+
+// Example 1
+// Staatliches
+@mixin staatliches {
+	font-family: 'Staatliches-Regular', sans-serif;
+	font-weight: 400;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+*/
+
+
+/*
+// Use
+  .some-class {
+	@include sf(400);
+}
+
+  .another-class {
+	@include sf(700);
+}
+
+  .title {
+	@include staatliches;
+}
+*/
+
+
+
+// Mixins for Flex layouts
+/*
+Exampels:
+@include flex-layout(flex-start, space-between); // align-items: flex-start; justify-content: space-between;
+* @include flex-layout(center, space-between); 
+* @include flex-layout(flex-end, space-between);
+* @include flex-layout(stretch, space-between);
+* @include flex-layout(flex-start, space-around);
+* @include flex-layout(center, space-around); 
+* @include flex-layout(flex-end, space-around);
+* @include flex-layout(stretch, space-around);
+* @include flex-layout(center, center);
+* @include flex-layout(flex-start, flex-start);
+*/
+
+@mixin flex-layout($align: flex-start, $justify: space-between) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+// Mixins for Grid layouts
+/*
+Exampels:
+* @include grid-layout(2, start, center); // grid-template-columns: repeat(2, 1fr); justify-items: start; align-items: center;
+* @include grid-layout(3, end, flex-start); // grid-template-columns: repeat(3, 1fr); justify-items: end; align-items: flex-start;
+* @include grid-layout(4, center, flex-end); // grid-template-columns: repeat(4, 1fr); justify-items: center; align-items: flex-end;
+*/
+
+@mixin grid-layout($columns: 3, $justify: center, $align: center) {
+	display: grid;
+	grid-template-columns: repeat($columns, 1fr);
+	justify-items: $justify;
+	align-items: $align;
+}
