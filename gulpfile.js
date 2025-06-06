@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const { src, dest, watch, parallel, series } = gulp;
+const fs = require('fs');
 const plugins = {
   scss: require('gulp-sass')(require('sass')),
   concat: require('gulp-concat'),
@@ -117,6 +118,7 @@ function scripts() {
 
 // Style processing
 function styles() {
+  fs.mkdirSync('app/css', { recursive: true });
   return src(paths.stylesSrc)
     .pipe(
       plugins.plumber({
