@@ -107,12 +107,13 @@ npm install --save-dev gulp
 ## ☕ Сподобалась збірка? 
 Пригостіть автора кавою через [PayPal](https://www.paypal.com/donate/?business=datoshcode@gmail.com)
 
- ## Ліцензія
-
-<a href="LICENSE">MIT</a>
-
 
 **Приємної роботи!**
 
 <img src="img1.png" alt="image">
+
+ ## Ліцензія
+
+<a href="LICENSE">MIT</a>
+
 
