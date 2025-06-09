@@ -104,10 +104,10 @@ npm install --save-dev gulp
 
 @@include('footer.html') - під'єднуємо footer.html
 
+## ☕ Сподобалась збірка? 
+Пригостіть автора кавою через [PayPal](https://www.paypal.com/donate/?business=datoshcode@gmail.com)
 
 **Приємної роботи!**
 
 <img src="img1.png" alt="image">
 
-## ☕ Сподобалась збірка? 
-Пригостіть автора кавою через [PayPal](https://www.paypal.com/donate/?business=datoshcode@gmail.com)
