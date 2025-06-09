@@ -108,3 +108,6 @@ npm install --save-dev gulp
 **Приємної роботи!**
 
 <img src="img1.png" alt="image">
+
+## ☕ Сподобалась збірка? 
+Пригостіть автора кавою через [PayPal](https://www.paypal.com/donate/?business=datoshcode@gmail.com)
