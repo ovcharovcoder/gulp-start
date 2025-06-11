@@ -96,7 +96,7 @@ app/
 |   |--_modal.scss
 |   |--_swiper.scss
 |   |--_vars.scss
-|   |--_reset.scss
+|   |--_optimize.scss
 |   |--style.scss
 |   
 |-- .gitignore
