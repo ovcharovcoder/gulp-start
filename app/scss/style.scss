@@ -1,4 +1,5 @@
 // Сonnecting SCSS files for a project
+@use 'optimize';
 @use 'vars' as *;
 @use 'mixins';
 @use 'fonts';
