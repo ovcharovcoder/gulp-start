@@ -62,7 +62,7 @@ npm install --save-dev gulp
 
 Стуктура проєкту:
 ---------------------------------------------------
-
+`
 app/
 |-- components/
 |   |-- header.html
@@ -104,7 +104,7 @@ app/
 |-- package.json
 |-- postcss.config.js
 |-- readme.txt
-
+`
 
 
 Робота зі стилями css:
