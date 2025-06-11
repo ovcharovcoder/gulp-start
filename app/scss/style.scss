@@ -1,6 +1,6 @@
 // Сonnecting SCSS files for a project
-@use 'optimize'; // reset.css
-@use 'vars' as *;
+@use 'optimize' as *; // reset.css
+@use 'vars';
 @use 'mixins';
 @use 'fonts';
 @use 'global';
