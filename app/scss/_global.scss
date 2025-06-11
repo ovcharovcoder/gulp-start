@@ -27,9 +27,9 @@ h1 {
 }
 
 body {
-  //@include sf(400);
+  @include mixins.sf(400);
   font-size: 1rem; // 16px
-  color: $default;
+  color: vars.$default;
   display: flex;
   flex-direction: column;
 }
