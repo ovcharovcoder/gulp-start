@@ -60,6 +60,52 @@ npm install --save-dev gulp
 Всі вихідні шрифти у форматі .ttf та .otf необхідно зберігати у теці: app/fonts/src. Всі вони будуть конвертовані у формати: .woff та .woff2 та переміщені до теки: app/fonts. 
 Для успішної конвертації шрифтів, бажано зупинити Gulp, додати шрифти до папки та повторно запустити Gulp. Конвертація шрифтів може зайняти деякий час.
 
+Стуктура проєкту:
+---------------------------------------------------
+
+app/
+|-- components/
+|   |-- header.html
+|   |-- aside.html
+|   |-- footer.html
+|
+|-- fonts/
+|   |-- src/
+|   
+|-- images/
+|   |-- icons/
+|   |-- src/
+|
+|-- js/
+|   |-- libs/
+|   |   |--anim.js 
+|   |   |--dd-menu.js 
+|   |-- main.js 
+|   |-- scripts.js 
+|   
+|-- pages/
+|   |-- index.html
+|
+|-- scss/
+|   |--_fonts.scss
+|   |--_footer.scss
+|   |--_global.scss
+|   |--_main.scss
+|   |--_media.scss
+|   |--_mixins.scss
+|   |--_modal.scss
+|   |--_swiper.scss
+|   |--_vars.scss
+|   |--_reset.scss
+|   |--style.scss
+|   
+|-- .gitignore
+|-- gulpfile.js 
+|-- package.json
+|-- postcss.config.js
+|-- readme.txt
+
+
 
 Робота зі стилями css:
 ---------------------------------------------------
