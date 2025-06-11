@@ -70,23 +70,23 @@ app/
 |   |-- index.html
 |
 |-- scss/
-|   |--_fonts.scss
-|   |--_footer.scss
-|   |--_global.scss
-|   |--_main.scss
-|   |--_media.scss
-|   |--_mixins.scss
-|   |--_modal.scss
-|   |--_swiper.scss
-|   |--_vars.scss
-|   |--_optimize.scss
-|   |--style.scss
-|   
-|-- .gitignore
-|-- gulpfile.js 
-|-- package.json
-|-- postcss.config.js
-|-- readme.txt
+    |--_fonts.scss
+    |--_footer.scss
+    |--_global.scss
+    |--_main.scss
+    |--_media.scss
+    |--_mixins.scss
+    |--_modal.scss
+    |--_swiper.scss
+    |--_vars.scss
+    |--_optimize.scss
+    |--style.scss
+
+.gitignore
+gulpfile.js 
+package.json
+postcss.config.js
+readme.txt
 ```
 
 
