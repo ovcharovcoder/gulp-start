@@ -1,43 +1,17 @@
-@use 'vars';
-@use 'mixins';
-
-// Glue footer to the bottom
-html,
-body {
-  height: 100%;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main {
-  flex: 1 0 auto;
-}
-
-.footer {
-  margin-top: auto;
-}
-// END/ Glue footer to the bottom
-
-h1 {
-  font-size: 3rem;
-}
+@use 'vars' as *;
+@use 'mixins' as *;
 
 body {
-  @include mixins.sf(400);
+  //@include sf(400);
   font-size: 1rem; // 16px
-  color: vars.$default;
+  color: $default;
   display: flex;
   flex-direction: column;
 }
-
-// === GLOBAL CLASSES ===
 
 .container {
-  max-width: 1230px;
+  width: 100%;
+  max-width: 1470px;
   margin: 0 auto;
   padding: 0 0.9375rem; // 0 15px
 }
