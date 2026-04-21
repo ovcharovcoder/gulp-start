@@ -161,6 +161,7 @@ readme.txt
 Andrii Ovcharov<br>
 📧 ovcharovcoder@gmail.com
 
+---
 
 **Приємної роботи!**
 
