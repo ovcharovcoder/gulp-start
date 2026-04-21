@@ -150,6 +150,17 @@ readme.txt
 ## ☕ Сподобалась збірка? 
 Пригостіть автора кавою через [PayPal](https://www.paypal.com/donate/?business=datoshcode@gmail.com)
 
+## 👤 Author
+
+<img
+  src="https://raw.githubusercontent.com/ovcharovcoder/easy-font-convert/main/images/avatar.png"
+  alt="Andrii Ovcharov"
+  width="60"
+/>
+
+Andrii Ovcharov<br>
+📧 ovcharovcoder@gmail.com
+
 
 **Приємної роботи!**
 
